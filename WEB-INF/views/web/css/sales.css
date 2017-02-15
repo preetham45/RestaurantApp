@@ -1,0 +1,199 @@
+#dishItems {
+	z-index: 100;
+}
+
+form {
+	width: 465px;
+}
+
+#table1 {
+	width: 465px;
+	border: none;
+	border-collapse: collapse;
+}
+
+#table1 tr td {
+	padding-bottom: 5px;
+	border: none;
+	font-size: 13px;
+	font-weight: bold;
+	color: white;
+}
+
+#table1 tr td input {
+	border: 1px solid black;
+	height: 18px;
+	line-height: 18px;
+	color: black;
+	background-color: white;
+	width: 120px;
+	font-size: 12px;
+}
+ 
+#table1 tr td input:focus {  
+	border-color: #4488cc;
+	border-style: solid;
+	border-width: 1px;
+	outline: 0;
+}
+
+#table1 tr td select {
+	width: 122px;
+	height: 20px;
+	font-size: 12px;
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+}
+
+#table1 tr td input.uneditable1,
+#table1 tr td input.uneditable1:focus {
+	width: 122px;
+	background-color: transparent;
+	color: black;
+	border: none;
+}
+
+#table1 tr td input.uneditable,
+#table2 tr td input.uneditable,
+#table1 tr td input.uneditable:focus,
+#table2 tr td input.uneditable:focus {
+	width: 60px;
+	background-color: transparent;
+	color: black;
+	border: none;
+}
+
+#table2 {
+	width: 465px;
+	border-collapse: collapse;
+}
+
+#table2 tr th {
+	border: 1px solid #f5f5f5;
+	background: url('../images/contentBg.png');
+	color: white;
+	text-align: center;
+	font-size: 13px;
+	line-height: 19px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 3px;
+	vertical-align: middle;
+}
+
+#table2 tr td {
+	border: 1px solid #f5f5f5;
+	vertical-align: middle;
+	padding: 2px;
+}
+
+#table2 tr td.noBorder {
+	border: none;
+}
+
+#table2 tr td img {
+	cursor: pointer;
+}
+
+#table2 tr td input {
+	border: 1px solid black;
+	height: 18px;
+	line-height: 18px;
+	color: black;
+	background-color: white;
+	width: 95%;
+	font-size: 12px;
+}
+
+#table2 tr td input:focus {  
+	border-color: #4488cc;
+	border-style: solid;
+	border-width: 1px;
+	outline: 0;
+}
+
+input.button {
+	display: inline-block;
+	background-color: #1f9dd1;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #555;
+	font-size: 11px;
+	color: white;
+	border: none;
+	padding-left: 6px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 6px;
+	text-shadow: none;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+input.button:hover {
+	background: #5f9ad9;
+	color: #ffffff;
+}
+
+div#menuButton {
+	width: 130px;
+	height: 45px;
+	overflow: hidden;
+	display: inline-block;
+	color: black;
+	margin: 3px;
+	text-align: center;
+	line-height: 45px;
+	border: 2px outset #cccccc;
+	background: #d5d5d5;
+	pointer: cursor;
+	font-size: 12px;
+	font-family: Arial;
+	cursor: pointer;
+}
+
+div#menuButton:hover {
+	background: #b5b5b5;
+}
+
+h3 {
+	font-family: Arial;
+	font-size: 17px;
+}
+
+h4 {
+	font-family: Arial;
+	font-size: 13px;
+}
+
+#accordion .ui-accordion-header a {
+	font-family: Arial;
+	font-size: 12px;
+}
+
+#accordion .ui-accordion-content {
+	font-family: Arial;
+	font-size: 11px;
+}
+
+#chart1 {
+	box-sizing: border-box;
+	font: 10px Arial;
+	font-color: white;
+	padding: 5px;
+	width: 450px;
+	height: 220px;
+	
+	border: 1px solid #ddd;
+	background: #f4f4f4;
+	background: linear-gradient(#f2f2f2 0, #f6f6f6 50px);
+	background: -o-linear-gradient(#f2f2f2 0, #f6f6f6 50px);
+	background: -ms-linear-gradient(#f2f2f2 0, #f6f6f6 50px);
+	background: -moz-linear-gradient(#f2f2f2 0, #f6f6f6 50px);
+	background: -webkit-linear-gradient(#f2f2f2 0, #f6f6f6 50px);
+	box-shadow: 0 3px 5px #555;
+	-o-box-shadow: 0 3px 5px #555;
+	-ms-box-shadow: 0 3px 5px #555;
+	-moz-box-shadow: 0 3px 5px #555;
+	-webkit-box-shadow: 0 3px 5px #555;
+}

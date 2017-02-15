@@ -1,0 +1,280 @@
+body,h1,h2,h3,h4,h5,h6,a,p,ul,ol,li,em,strong,pre,code,form {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: 0;
+}
+
+.padtop {
+	padding-top: 15px;
+}
+
+#phone {
+	color: #FFEB00;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	color: white;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	background: black;
+	height: 100%;
+}
+
+#wrapper {
+	width: 950px;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+	z-index: 90;
+}
+
+a {
+	color: #999999;
+}
+
+a:hover {
+	color: #c4c4c4;
+}
+
+#menu_wrap {
+	width: 240px;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	z-index: 99;
+}
+
+#menu {
+	background: url(../images/menu_back.png) repeat-y top left;
+	width: 220px;
+	padding: 0 10px 25px 10px;
+}
+
+#restinfo {
+	text-align: center;
+	padding: 14px 10px 0px 20px;
+}
+
+#logo {
+	width: 240px;
+	height: 180px;
+}
+
+#logo h1 a {
+	display: block;
+	width: 220px;
+	height: 190px;
+	background: url(../images/logo_back.png) no-repeat top left;
+	text-indent: -9999px;
+}
+
+#navbar {
+	list-style: none;
+	margin: 34px 0 -5px 20px;
+}
+
+#navbar li {
+	width: 160px;
+	height: 29px;
+	padding: 7px 10px 14px;
+	border-bottom: 1px solid #343434;
+	position: relative;
+}
+
+#navbar li:first-child {
+	border-top: 1px solid #343434;
+}
+
+#navbar li a {
+	display: block;
+	width: 180px;
+	height: 40px;
+	font: bold 18px 'Myriad Pro Cond', 'Myriad Pro', 'Helvetica', 'Verdana',
+		sans-serif;
+	color: #ddd;
+	text-decoration: none;
+	text-transform: uppercase;
+	z-index: 20;
+	outline: none;
+}
+
+#navbar li span {
+	font: italic bold 12px 'Myriad Pro', 'Helvetica', 'Verdana', sans-serif;
+	color: #999;
+	position: absolute;
+	top: 28px;
+	left: 10px;
+	z-index: 10;
+	text-transform: none;
+}
+
+#navbar li span.hover_arrow {
+	width: 30px;
+	height: 30px;
+	display: none;
+	background: url(../images/menu_hover_arrow.png) no-repeat top left;
+	position: absolute;
+	top: 10px;
+	left: 150px;
+}
+
+#navbar li.top_nav:hover {
+	background: url(../images/menu_hover_arrow.png) no-repeat center right;
+}
+
+body.body_home a#home,body.body_about a#about {
+	color: white;
+}
+
+body.body_home a#home span,body.body_about a#about span {
+	color: #aaaaaa;
+}
+
+a.not_link {
+	cursor: default;
+}
+
+span.not_link {
+	cursor: default;
+}
+
+#hide_menu {
+	background: url(../images/hide_menu_back.png) no-repeat bottom left;
+	width: 220px;
+	height: 115px;
+	margin: 0 0 0 0;
+	padding: 0 30px 0 30px;
+	position: relative;
+}
+
+.menu_visible {
+	background: url(../images/menu_hide_arrow_top.png) no-repeat top left;
+}
+
+.menu_hidden {
+	background: url(../images/menu_hide_arrow_bottom.png) no-repeat top left;
+}
+
+#hide_menu a {
+	display: none;
+	width: 48px;
+	height: 48px;
+	text-indent: -9999px;
+	position: absolute;
+	top: 5px;
+	left: 98px;
+	outline: none;
+}
+
+.menu_tooltip {
+	width: 140px;
+	height: 30px;
+	padding: 17px 15px 0 25px;
+	background: url(../images/tooltip.png) no-repeat top center;
+	position: absolute;
+	top: 3px;
+	left: 130px;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	line-height: 18px;
+	display: none;
+}
+
+.menu_tooltip p {
+	text-align: center;
+}
+
+#main_wrap {
+	background: #360000;
+	color: #fff;
+	margin: 0 0 0 240px;
+	min-height: 100%;
+}
+
+.maincontent {
+	position: relative;
+	width: 630px;
+	padding: 0 40px 75px 40px;
+	font: normal 12px Verdana, Arial, sans-serif;
+	line-height: 20px;
+	display: inline-block;
+	overflow: auto;
+}
+
+.maincontent h2 {
+	font: bold 30px 'Myriad Pro Cond', 'Myriad Pro', 'Helvetica', 'Verdana',
+		sans-serif;
+	text-transform: uppercase;
+	margin: 35px 0 20px 0;
+}
+
+.maincontent h2.section_title {
+	font: bold 30px 'Myriad Pro Cond', 'Myriad Pro', 'Helvetica', 'Verdana',
+		sans-serif;
+	text-transform: uppercase;
+	margin: 19px 0 40px 0;
+}
+
+#content {
+	float: left;
+	margin: -28px 0 0 0;
+}
+
+.content_full_width {
+	width: 630px;
+}
+
+#footer {
+	width: 630px;
+	padding: 0 40px 0 40px;
+	font-size: 11px;
+	position: relative;
+	margin: -50px 0 0 240px;
+	height: 50px;
+	clear: both;
+}
+
+#footer_info {
+	position: relative;
+	width: 630px;
+	margin: 0 auto;
+	border-top: 1px solid #BEBEBE;
+}
+
+#footer_info p {
+	margin: 12px 0 0 0;
+	color: #bebebe;
+}
+
+#hor-minimalist-b {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: -20px 45px 45px 0;
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+#hor-minimalist-b th {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFADF;
+	padding: 30px 8px 5px;
+	text-align: left;
+	border-bottom: 2px solid #FFEB00;
+}
+
+#hor-minimalist-b td {
+	border-bottom: 1px solid #973D00;
+	text-align: left;
+	color: #fff;
+	padding: 6px 8px;
+}
+
+#hor-minimalist-b tbody tr:hover td {
+	color: #FFEB00;
+}

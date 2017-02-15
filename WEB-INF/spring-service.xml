@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	    <property name="locations">
+	        <list>
+	            <value>/WEB-INF/resources/jdbc.properties</value>
+	            <value>/WEB-INF/resources/query.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+
+		<property name="driverClass">
+			<value>${database.driver}</value>
+		</property>
+
+		<property name="jdbcUrl">
+			<value>${database.url}</value>
+		</property>
+
+		<property name="user">
+			<value>${database.user}</value>
+		</property>
+
+		<property name="password">
+			<value>${database.password}</value>
+		</property>
+
+		<property name="testConnectionOnCheckin" value="false" />
+		<property name="preferredTestQuery" value="SELECT 1;" />
+		<property name="testConnectionOnCheckout" value="true" />
+	</bean>
+
+</beans>
